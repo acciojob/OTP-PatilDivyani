@@ -1,10 +1,9 @@
 //your JS code here. If required.
-//your JS code here. If required.
-let inputs = document.getElementsByClassName("code");
+let inputs = document.querySelectorAll('.code');
 
 inputs.forEach((input, index)=>{
-  input.addEventListener('input', (ele)=>{
-    const value = ele.target.value;
+  input.addEventListener('input', (e)=>{
+    const value = e.target.value;
     if (value !== '') {
       if (index < inputs.length - 1) {
           inputs[index + 1].focus();
